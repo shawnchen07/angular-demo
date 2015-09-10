@@ -1,0 +1,23 @@
+//@import "compass/reset";
+@import "compass/css3";
+//@import "compass/utilities";
+
+$font-stack: Helvetica, sans-serif;
+$font-color: #000000;
+$primary-font-color: #ffffff;
+$box-color: #89cff0;
+
+body {
+  font: 20px $font-stack;
+  color: $font-color;
+}
+
+.box {
+  width: 10em;
+  height: 10em;
+  margin: 2em;
+  float: left;
+  background-color: $box-color;
+  color: $primary-font-color;
+  @include border-radius(1em);
+}
